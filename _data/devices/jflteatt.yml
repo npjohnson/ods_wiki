@@ -23,6 +23,8 @@ models: [SGH-I337]
 name: Galaxy S4 (SGH-I337)
 network: [2G GSM, 2G CDMA, 3G UMTS, 3G CDMA2000, 4G LTE]
 no_oem_unlock_switch: true
+note_content: Due to a variety of reasons, provided recovery images are not Loki'd. You will need to do this yourself. Though, the ROM installation `.zip`s automatically themselves will Loki the boot image as-needed.
+note_title: Loki Support
 peripherals: [GPS, GLONASS, NFC, Infrared sensor, USB OTG, MHL 2.0, MHL HDMI, Accelerometer, Barometer,
   Gesture sensor, Gyroscope, Hall effect sensor, Hygrometer, Proximity sensor, Light sensor, Thermometer]
 ram: 2 GB
