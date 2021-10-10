@@ -109,6 +109,7 @@ definitions:
     - NVIDIA GK20A (Kepler)
     - NVIDIA GM20B (Maxwell)
     - NVIDIA GP10B (Pascal)
+    - GV11B (Volta)
     - NVIDIA Kepler DX1 192-core
     - NVIDIA Maxwell 256-core
     - NVIDIA Tegra 4
@@ -505,6 +506,7 @@ properties:
   cpu:
     "$id": "/properties/cpu"
     enum:
+    - Carmel
     - Cortex-A15
     - Cortex-A15 & Cortex-A7
     - Cortex-A53
