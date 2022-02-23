@@ -17,10 +17,12 @@ image: berkeley.png
 install_method: fastboot_huawei
 is_unlockable: false
 kernel: {repo: android_kernel_huawei_kirin970, version: '4.9'}
-maintainers: []
+maintainers: [npjohnson]
 models: [BKL-AL00, BKL-AL10, BKL-AL20, BKL-L09, BKL-TL10, BKL-TL20]
 name: Honor View 10
 network: [2G GSM, 3G UMTS, 4G LTE]
+note_content: This device is technically unsupported, as for a variety of reasons it is no longer feasible to backports Android Security Bulletins (ASBs) to Android 9. As such, one final build is published that is based on the December, 2025 security patch level. There will very likely be no further builds for this device. These builds rely on the kernel currently installed on the device as opposed to a source built one, this was done to maintian compatibllity with variants who have no funcitonal Pie-based kernel source (eg. BKL-L04). Please ensure your device is on a Pie based EMUI firmware before proceeding.
+note_title: Device Support + Prebuilt Kernel
 peripherals: [3.5mm jack, Accelerometer, Compass, Fingerprint reader, GPS, Gyroscope, Proximity sensor]
 ram: 4/6 GB
 recovery_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
