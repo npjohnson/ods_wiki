@@ -14,7 +14,7 @@ If you already have a LineageOS source tree checked out, then this step is done 
 
 ### Using git
 
-If you don't have a LineageOS source tree on your device, then you can clone the wiki from GitHub to any directory you like. In this example, we'll use `~/lineage_wiki`.
+If you don't have a LineageOS source tree on your device, then you can clone the wiki from GitHub to any directory you like. In this example, we'll use `~/ods_wiki`.
 
 #### Install Git
 
@@ -48,8 +48,8 @@ git config --global user.email "youremail@example.com"
 {% include alerts/tip.html content="Before this step, you can fork the LineageOS wiki repository and work on your own copy. That way you can preview your changes online using GitHub pages, which [we've detailed below](#preview-using-github). Just fork the repo and then replace LineageOS in the `git clone` command with your GitHub username." %}
 
 ```
-git clone https://github.com/LineageOS/lineage_wiki ~/lineage_wiki
-cd ~/lineage_wiki
+git clone https://github.com/npjohnson/ods_wiki ~/ods_wiki
+cd ~/ods_wiki
 curl -Lo .git/hooks/commit-msg https://review.lineageos.org/tools/hooks/commit-msg
 chmod +x .git/hooks/commit-msg
 ```
@@ -89,7 +89,7 @@ Save the file and exit the editor. Now upload your changes to GitHub:
 git push origin
 ```
 
-Preview your changes - you can see your fork of the wiki at `http://yourusername.github.io/lineage_wiki`.
+Preview your changes - you can see your fork of the wiki at `http://yourusername.github.io/ods_wiki`.
 
 #### Fixing mistakes
 
@@ -169,12 +169,12 @@ curl -sSL https://get.rvm.io | bash -s stable
 
 #### Configure `ruby` for editing the wiki
 
-These steps will configure and install the latest version of ruby MRI via `rvm`. All gems (modules) are stored in the namespace `lineage_wiki` and the environment will be configured to allow remote access to GitHub. Once configured, `ruby` will be installed and the required gems downloaded:
+These steps will configure and install the latest version of ruby MRI via `rvm`. All gems (modules) are stored in the namespace `ods_wiki` and the environment will be configured to allow remote access to GitHub. Once configured, `ruby` will be installed and the required gems downloaded:
 
 ```
 cd $LINEAGE_SRC/lineage/wiki
 echo ruby > .ruby-version
-echo lineage_wiki > .ruby-gemset
+echo ods_wiki > .ruby-gemset
 rvm install ruby
 gem install bundler rails
 bundle install
@@ -206,7 +206,7 @@ and [configure an SSH key](https://review.lineageos.org/Documentation/user-uploa
 After you've done this, you can push your commits to Gerrit:
 
 ```
-git remote add gerrit ssh://<gerritusername>@review.lineageos.org:29418/LineageOS/lineage_wiki
+git remote add gerrit ssh://<gerritusername>@review.lineageos.org:29418/npjohnson/ods_wiki
 git push gerrit HEAD:refs/for/master
 ```
 

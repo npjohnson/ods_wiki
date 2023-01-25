@@ -105,12 +105,3 @@ int getLineageSDKVersion() {
     return 0;
 }
 {% endhighlight %}
-
-
-
-## Get assistance
-
-If you have any questions or get stuck on any of the steps, feel free to ask on [our subreddit](https://reddit.com/r/LineageOS) or in
-[#LineageOS on Libera.Chat](https://kiwiirc.com/nextclient/irc.libera.chat#lineageos).
-
-You can also find more information in the [LineageSDK javadoc](https://lineageos.github.io/android_lineage-sdk).

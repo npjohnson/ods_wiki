@@ -9,7 +9,7 @@ tags:
 ---
 
 ## What not to report
-  - Bugs in unofficial builds or anything not downloaded from [our official portal](https://download.lineageos.org/)
+  - Bugs in unofficial builds or anything not downloaded from [our official portal](https://updater.oddsolutions.us/)
   - Missing builds
   - Asking for installation help
   - Asking for device support

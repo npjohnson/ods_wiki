@@ -147,10 +147,3 @@ you can set the global accent choosing one of the 4 possible configurations usin
 method passing the accent overlay package name as argument.
 
 You can get a list of trusted accent packages names with the [StyleInterface](https://lineageos.github.io/android_lineage-sdk/reference/lineageos/style/StyleInterface.html)'s [`getTrustedAccents()`](https://lineageos.github.io/android_lineage-sdk/reference/lineageos/style/StyleInterface.html#getTrustedAccents()) method.
-
-## Get assistance
-
-If you have any questions or get stuck on any of the steps, feel free to ask on [our subreddit](https://reddit.com/r/LineageOS) or in
-[#LineageOS on Libera.Chat](https://kiwiirc.com/nextclient/irc.libera.chat#lineageos).
-
-You can also find more information in the [LineageSDK javadoc](https://lineageos.github.io/android_lineage-sdk).

@@ -9,7 +9,7 @@
 
 {% if device.maintainers != empty %}
 ## Get LineageOS for the {{ device.vendor }} {{ device.name }}
-[Get the builds here](https://download.lineageos.org/{{ device.codename }})
+[Get the builds here](https://updater.oddsolutions.us/#/devices/{{ device.codename }}/builds)
 {% endif %}
 
 ## Guides
@@ -60,7 +60,3 @@
 * **Bootloader/Fastboot/Download**: {{ device.download_boot }}
 {% endif %}
 {% endif %}
-
-## Find help online
-
-You can find assistance with LineageOS on [our subreddit](https://reddit.com/r/LineageOS), or in [#LineageOS on Libera.Chat](https://kiwiirc.com/nextclient/irc.libera.chat#lineageos).

@@ -74,14 +74,13 @@ There are no recovery installation instructions for this discontinued device.
 {%- endif -%}
 
 {%- if device.maintainers != empty %}
-1. Download the [LineageOS installation package](https://download.lineageos.org/{{ device.codename }}) that you would like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
+1. Download the [LineageOS installation package](https://updater.oddsolutions.us/#/devices/{{ device.codename }}/builds) that you would like to install or [build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) the package yourself.
 {%- if device.is_retrofit_dynamic_partitions and device.is_ab_device != true %}
     * You will also need to flash an empty super image since your device uses retrofitted dynamic partitions: download super_empty.img from the directory named with the latest date [here](https://mirror.math.princeton.edu/pub/lineageos/full/{{ device.codename }}/)
 {%- endif %}
 {%- else %}
 1. [Build]({{ "devices/" | append: device.codename | append: "/build" | relative_url }}) a LineageOS installation package.
 {%- endif %}
-    * _(Optionally)_: If you want to install an application package add-on such as [Google Apps]({{ "gapps.html" | relative_url }}) (use the `{{ userspace_architecture }}` architecture), please read and follow the instructions on [Google Apps page]({{ "gapps.html" | relative_url }})
 2. If you are not in recovery, reboot into recovery:
     * {{ device.recovery_boot }}
     {% if device.vendor == "LG" %}
@@ -135,10 +134,10 @@ There are no recovery installation instructions for this discontinued device.
 {%- endif %}
 {%- else %}
 {%- if device.uses_twrp and device.is_ab_device != true %}
-8. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://download.lineageos.org/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
+8. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://updater.oddsolutions.us/#/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
 9. Once you have installed everything successfully, run 'adb reboot'.
 {%- else %}
-8. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://download.lineageos.org/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
+8. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://updater.oddsolutions.us/#/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
 9. Once you have installed everything successfully, click the back arrow in the top left of the screen, then "Reboot system now".
 {%- endif %}
 {%- endif %}
@@ -153,10 +152,5 @@ If it takes longer, you may have missed a step, otherwise feel free to [get assi
 {% if device.custom_recovery_link or device.uses_twrp %}
 {% include alerts/specific/warning_recovery_app.html %}
 {% endif %}
-
-## Get assistance
-
-After you've double checked that you followed the steps precisely, didn't skip any and still have questions or got stuck, feel free to ask on [our subreddit](https://reddit.com/r/LineageOS) or in
-[#LineageOS on Libera.Chat](https://kiwiirc.com/nextclient/irc.libera.chat#lineageos).
 
 </div>

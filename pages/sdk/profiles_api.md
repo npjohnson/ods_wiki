@@ -120,10 +120,3 @@ Profile.ProfileTrigger getTrigger(String triggerName) {
 
 As you can see we set the TriggerType as WiFI, set the SSID as the triggerId (for tracking), set the title of the access point as the triggerName,
 and then finally declare that we want to be "triggered" when an ON_CONNECT is given for the access point.
-
-## Get assistance
-
-If you have any questions or get stuck on any of the steps, feel free to ask on [our subreddit](https://reddit.com/r/LineageOS) or in
-[#LineageOS on Libera.Chat](https://kiwiirc.com/nextclient/irc.libera.chat#lineageos).
-
-You can also find more information in the [LineageSDK javadoc](https://lineageos.github.io/android_lineage-sdk).

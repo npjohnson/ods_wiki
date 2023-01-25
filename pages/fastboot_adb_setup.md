@@ -88,7 +88,3 @@ it will pull to the current folder.
 * `adb logcat` - allows you to view the device log in real-time. You can use `adb logcat -b radio` to view radio logs,
 and `adb logcat -C` to view logs in colour
 * `adb install <file>` - installs the given .apk file to your device
-
-## Need help?
-
-You can find assistance with LineageOS on [our subreddit](https://reddit.com/r/LineageOS), or in [#LineageOS on Libera.Chat](https://kiwiirc.com/nextclient/irc.libera.chat#lineageos).

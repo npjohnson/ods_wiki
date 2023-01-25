@@ -6,13 +6,21 @@ permalink: faq.html
 
 {% include snippets/branches.md %}
 
+## What is the difference between Odd Solutions builds and official LineageOS?
+ - There are a few major difference
+   - These builds have full GMS included as applicable (some legacy devices need a trimmed down version), so you don't need to flash GApps!
+   - LineageOS 16.0 builds have Pixel goodies as well as reverse-engineered SystemUIGoogle and SettingsGoogle implementations. LineageOS 17.1+ builds just have the Pixel goodies.
+   - These builds are signed with Odd Solutions `dev-keys` as opposed to LineageOS's `release-keys`.
+   - Many of the devices supported here don't fully comply to charter, but are functional enough for daily use, and some can't support specific functions on official LineageOS, but can unofficially, so please read the noted on your device's specific page [here](https://wiki.oddsolutions.us/device).
+   - No warranty is impled or provided on any of this, consider these builds as testing builds at all time.
+
 ## Installing LineageOS zips in Recovery results in "Error 7"
  - The most common reasons for this error are:
    - You are trying to install a build for a different device. _You need to make sure you download the zip for the correct device *and* variant_
    - You are attempting to migrate from an unofficial build to official LineageOS. _A full data wipe is needed if you are coming from something other than an official build of LineageOS._
    - Your vendor/modem/bootloader is too old (or maybe too new). _Flash the correct stock image for your device, before wiping data and attempting to install LineageOS again_. This information should be listed on the device's wiki page.
    - Your recovery is outdated. _Flash the newest available version of the recommended recovery image for your device_.
- - If your error still persists after confirming these are not causing your issue, ask someone for help on IRC [#lineageos@Libera.Chat](https://kiwiirc.com/nextclient/irc.libera.chat#lineageos) or on the [subreddit](http://reddit.com/r/lineageos) and provide a recovery log.
+ - If your error still persists after confirming these are not causing your issue, post on your devices relevant XDA thread and provide a recovery log.
 
 ## My device _is_ officially supported, but there's no zips for it on the download page. Where are they?
  - Be patient. Devices are slowly being built throughout the week. Maintainers have busy lives, and sometimes an issue is holding it back. Please do not ask for ETAs.

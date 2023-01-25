@@ -41,7 +41,7 @@ This device does not have more than one version so far, therefore we can't provi
 {%- elsif device.uses_twrp %}
 1. Verify your device is using the latest [TWRP](https://dl.twrp.me/{{ custom_recovery_codename }}). Simply download the latest recovery file, named something like `twrp-x.x.x-x-{{ custom_recovery_codename }}.img`.
 {%- else %}
-1. Verify your device is using the latest [Lineage Recovery](https://download.lineageos.org/{{ custom_recovery_codename }}). Simply download the latest recovery file, named something like `lineage-{{ device.current_branch | precision: 1 }}-{{ site.time | date: "%Y%m%d" }}-recovery-{{ custom_recovery_codename }}.img`.
+1. Verify your device is using the latest [Lineage Recovery](https://updater.oddsolutions.us/#/devices/{{ custom_recovery_codename }}/builds). Simply download the latest recovery file, named something like `lineage-{{ device.current_branch | precision: 1 }}-{{ site.time | date: "%Y%m%d" }}-recovery-{{ custom_recovery_codename }}.img`.
 {%- endif %}
 Follow your [device's installation guide]({{ path_prefix | append: "/install" | relative_url }}) to see how you can update your recovery image.
     {% include alerts/important.html content="These instructions may not work if you choose to use a different recovery!" %}
@@ -61,16 +61,12 @@ The updater app does not support upgrades from one version of LineageOS to anoth
 
 {{ recovery_update }}
 {%- if device.maintainers != empty %}
-1. Download the [LineageOS install package](https://download.lineageos.org/{{ device.codename }}) that you'd like to install or [build]({{ path_prefix | append: "/build" | relative_url }}) the package yourself.
+1. Download the [LineageOS install package](https://updater.oddsolutions.us/#/devices/{{ device.codename }}/builds) that you'd like to install or [build]({{ path_prefix | append: "/build" | relative_url }}) the package yourself.
 {%- else %}
 1. [Build]({{ path_prefix | append: "/build" | relative_url }}) a LineageOS install package.
 {%- endif %}
-2. If you are currently using (or now want to use) an application package add-on such as [Google Apps]({{ "gapps.html" | relative_url }}), you have the following options:
-    - keep using them: Download the appropriate version [now]({{ "gapps.html" | relative_url }}) (use the `{{ userspace_architecture }}` architecture)
-    - remove them: You can only do so by performing a factory reset, which will also remove all your data.
-    - start using them: You can only do so by performing a factory reset, which will also remove all your data. Download the appropriate version [now]({{ "gapps.html" | relative_url }}) (use the `{{ userspace_architecture }}` architecture)
-3. Make sure your computer has working `adb`. Setup instructions can be found [here]({{ "adb_fastboot_guide.html" | relative_url }}).
-4. Enable [USB debugging]({{ "adb_fastboot_guide.html#setting-up-adb" | relative_url }}) on your device.
+2. Make sure your computer has working `adb`. Setup instructions can be found [here]({{ "adb_fastboot_guide.html" | relative_url }}).
+3. Enable [USB debugging]({{ "adb_fastboot_guide.html#setting-up-adb" | relative_url }}) on your device.
 {{ adbRoot }}
 {%- if device.format_on_upgrade %}
 4. Reboot into recovery by running `adb reboot recovery`, or by performing the following:
@@ -107,10 +103,10 @@ The updater app does not support upgrades from one version of LineageOS to anoth
 {% endif %}
 {% else %}
 {% if device.uses_twrp and device.is_ab_device != true %}
-7. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://download.lineageos.org/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
+7. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://updater.oddsolutions.us/#/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
 8. Once you have installed everything successfully, run `adb reboot`.
 {% else %}
-9. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://download.lineageos.org/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
+9. _(Optionally)_: Root your device by installing [LineageOS' AddonSU](https://updater.oddsolutions.us/#/extras), (use the `{{ userspace_architecture }}` package) or by using any other method you prefer.
 10. Once you have installed everything successfully, click the back arrow in the top left of the screen, then "Reboot system now".
 {% endif %}
 {% endif %}
@@ -118,10 +114,4 @@ The updater app does not support upgrades from one version of LineageOS to anoth
 {%- if device.custom_recovery_link or device.uses_twrp %}
 {% include alerts/specific/warning_recovery_app.html %}
 {%- endif %}
-
-## Get assistance
-
-If you have any questions or get stuck on any of the steps, feel free to ask on [our subreddit](https://reddit.com/r/LineageOS) or in
-[#LineageOS on Libera.Chat](https://kiwiirc.com/nextclient/irc.libera.chat#lineageos).
-
 {% endif %}
