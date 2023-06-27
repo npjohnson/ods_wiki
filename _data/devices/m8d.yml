@@ -8,7 +8,7 @@ codename: m8d
 cpu: Krait 400
 cpu_cores: '4'
 cpu_freq: 2.3 GHz
-current_branch: 17.1
+current_branch: 18.1
 custom_recovery_codename: m8
 dimensions: {depth: 9.35, height: 146.36, width: 70.6}
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd> until the bootloader appears, then release the buttons. Use the volume buttons to scroll to "FASTBOOT" and press <kbd>Power</kbd> to select.
@@ -16,9 +16,11 @@ gpu: Qualcomm Adreno 320
 image: m8.png
 install_method: fastboot_htc
 kernel: {repo: android_kernel_htc_msm8974, version: '3.4'}
-maintainers: []
+maintainers: [bgcngm, npjohnson]
 name: One (M8) Dual SIM
 network: [2G GSM, 3G UMTS, 4G LTE]
+note_content: LineageOS 18.1 builds for this device should be treated as beta releases at the moment, mainly due to Lineage Recovery not booting for an unknown reason.
+note_title: Hardware Support
 peripherals: [Dual front speakers, Accelerometer, Gyroscope, Proximity sensor, Compass, GPS, Hall effect sensor, NFC, IR blaster]
 ram: 2 GB
 recovery_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd> until the bootloader appears, then release the buttons. Use the volume buttons to scroll to "RECOVERY" and press <kbd>Power</kbd> to select.
@@ -33,5 +35,5 @@ type: phone
 uses_twrp: true
 vendor: HTC
 vendor_short: htc
-versions: [14.1, 16.0, 17.1]
+versions: [14.1, 16.0, 17.1, 18.1]
 wifi: 802.11 b/g/n/ac
