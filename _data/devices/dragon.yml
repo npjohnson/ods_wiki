@@ -16,6 +16,7 @@ image: dragon.png
 install_method: fastboot_nexus
 kernel: {repo: android_kernel_google_dragon, version: '3.18'}
 maintainers: []
+migrated_to: {codename: 'sphynx', version: 20}
 name: Pixel C
 network: None
 peripherals: [Accelerometer, Gyroscope, Proximity sensor, Compass, Barometer]
@@ -29,7 +30,6 @@ soc: NVIDIA Tegra X1 (T210)
 storage: 32/64 GB
 tree: android_device_google_dragon
 type: tablet
-uses_twrp: true
 vendor: Google
 vendor_short: google
 versions: [14.1, 15.1]
