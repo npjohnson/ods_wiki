@@ -1,0 +1,37 @@
+architecture: arm64
+battery: {capacity: 9240, removable: False, tech: 'Li-Po'}
+bluetooth: {profiles: [A2DP], spec: '4.1'}
+cameras:
+  - {flash: None, info: '8 MP'}
+  - {flash: None, info: '2 MP'}
+codename: sphynx
+cpu: Cortex-A57
+cpu_cores: '4'
+cpu_freq: 1.9 GHz
+current_branch: 22.2
+dimensions: {depth: 7, height: 242, width: 179}
+download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
+gpu: NVIDIA Maxwell 256-core
+image: dragon.png
+install_method: fastboot_nexus
+kernel: {repo: android_kernel_nvidia_kernel, version: '4.9'}
+maintainers: [npjohnson, electmon, webgeek1234]
+models: [dragon]
+name: Pixel C (Linux 4.9)
+network: None
+note_content: "Builds for this device lack support for the following components currently: Camera, Sensors"
+note_title: Hardware Support
+peripherals: [Accelerometer, Gyroscope, Proximity sensor, Compass, Barometer]
+ram: 3 GB LPDDR3
+recovery_partition_name: recovery
+recovery_reboot: fastboot_menu
+release: 2015-12-08
+screen: {resolution: '2560x1800', size: 10.2, technology: 'IPS LTPS LCD'}
+soc: NVIDIA Tegra X1 (T210)
+storage: 32/64 GB eMMC
+tree: android_device_google_sphynx
+type: tablet
+vendor: Google
+vendor_short: google
+versions: [22.2]
+wifi: 802.11 a/b/g/n/ac
