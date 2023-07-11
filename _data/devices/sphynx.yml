@@ -1,0 +1,37 @@
+architecture: arm64
+battery: {removable: False, capacity: 9240, tech: 'Li-Po'}
+bluetooth: {spec: '4.1', profiles: [A2DP]}
+cameras:
+- {flash: None, info: '8 MP'}
+- {flash: None, info: '2 MP'}
+codename: sphynx
+cpu: Cortex-A57
+cpu_cores: '4'
+cpu_freq: 4 x 1.9 GHz
+current_branch: 21
+dimensions: {width: '179.0 mm (7.05 in)', height: '242.0 mm (9.53 in)', depth: '7.0 mm (0.28 in)'}
+download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>.
+gpu: NVIDIA Maxwell 256-core
+image: dragon.png
+install_method: fastboot_nexus
+kernel: {repo: android_kernel_nvidia_linux-4.9_kernel_kernel-4.9, version: '4.9'}
+maintainers: [npjohnson, electmon, webgeek1234]
+name: Pixel C (Linux 4.9)
+network: None
+note_title: LineageOS 20 Beta Builds
+note_content: "LineageOS 20 for this device lacks support for the following components currently: Camera, Sensors"
+peripherals: [Accelerometer, Gyroscope, Proximity sensor, Compass, Barometer]
+ram: 3 GB
+recovery_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Power</kbd>. On the next screen choose Recovery Mode.
+recovery_partition_name: recovery
+recovery_reboot: fastboot_menu
+release: 2015-12-08
+screen: {size: 10.2, resolution: '2560x1800', technology: 'IPS LTPS LCD'}
+soc: NVIDIA Tegra X1 (T210)
+storage: 32/64 GB
+tree: android_device_google_sphynx
+type: tablet
+vendor: Google
+vendor_short: google
+versions: [21]
+wifi: 802.11 a/b/g/n/ac, Dual-band, Wi-Fi Direct, Hotspot
