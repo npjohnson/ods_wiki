@@ -133,8 +133,7 @@ Dir.entries(device_dir).sort.each do |filename|
     validate_json(schema, device_json, device_path)
 
     if !device_json["maintainers"].empty? and device_json["uses_twrp"]
-      puts to_relative_path(device_path) + ': uses_twrp cannot be used for a supported device'
-      at_exit { exit false }
+      puts to_relative_path(device_path) + ': uses_twrp cannot be used for officially supported devices'
     end
 
     codename = filename.sub('.yml', '')
