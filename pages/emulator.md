@@ -131,7 +131,3 @@ AOSP uses the following path name by default, but you are free to make up your o
 LineageOS emulator builds will use the tag `lineage` by default (visible as "LineageOS" in the images list).
 
 As long as you **haven't** moved the folder directly into `system-images`, the emulator image should now show up in the of the lists of images when creating a new virtual Android device.
-
-## To get assistance
-
-* [#LineageOS-dev](https://web.libera.chat/gamja/?channel=#lineageos-dev) - A helpful, real-time chat room (or "channel"), on the Libera.Chat [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat) network.

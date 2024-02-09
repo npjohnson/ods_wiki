@@ -542,7 +542,7 @@ div[data-filter] {
     /***** Chrome, Safari, Opera and Edge Chromium styles *****/
     /* slider track */
     &::-webkit-slider-runnable-track {
-      background-color: #167c80;
+      background-color: #343434;
       border-radius: 0.5rem;
       height: 0.5rem;
     }
@@ -572,7 +572,7 @@ div[data-filter] {
     /******** Firefox styles ********/
     /* slider track */
     &::-moz-range-track {
-      background-color: #167c80;
+      background-color: #343434;
       border-radius: 0.5rem;
       height: 0.5rem;
     }

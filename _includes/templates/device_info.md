@@ -21,7 +21,7 @@ There are multiple variants of this device. [Make sure you're viewing the right 
 
 {% if device.maintainers != empty %}
 ## Downloads
-[Get the builds here](https://download.lineageos.org/devices/{{ device.codename }})
+[Get the builds here](https://updater.oddsolutions.us/devices/{{ device.codename }})
 {% endif %}
 
 ## Guides
@@ -89,13 +89,3 @@ There are multiple variants of this device. [Make sure you're viewing the right 
 {%- assign title = match.title | remove: "Quirks - " %}
 - [{{ title }}]({{ match.url | relative_url }})
 {%- endfor %}
-
-## Find help online
-
-You can find assistance with LineageOS on [our subreddit](https://reddit.com/r/LineageOS), or in [#LineageOS on Libera.Chat](https://web.libera.chat/gamja/?channel=#lineageos).
-
-{% if device.maintainers != empty %}
-## Report a bug
-
-If you'd like to report a bug, follow the instructions [here]({{ "/how-to/bugreport" | relative_url }}).
-{% endif %}
