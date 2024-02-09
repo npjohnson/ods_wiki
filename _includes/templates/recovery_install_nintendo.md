@@ -26,7 +26,7 @@ Additionally, this guide will not detail exploiting or ModChipping your Switch, 
 ## Preparing the SD Card
 1. In Hekate, select "Tools" in the top-center of the screen, then click "USB Tools" in the bottom right, finally selecting "SD Card" under the "USB Mass Storage" header in the top-left of the screen.
 2. Connect your device to your PC, and navigate to your SD Card once it is mounted.
-3.  Please download the following files from [here](https://download.lineageos.org/devices/{{ device.codename }}/builds) and place them in the noted folders (which you will potentially have to create) on your device's SD Card:
+3.  Please download the following files from [here](https://updater.oddsolutions.us/devices/{{ device.codename }}) and place them in the noted folders (which you will potentially have to create) on your device's SD Card:
    * `boot.img` -> `switchroot/install/boot.img`
    * `recovery.img` -> `switchroot/install/recovery.img`
    * `nx-plat.dtimg` -> `switchroot/install/nx-plat.dtimg`
