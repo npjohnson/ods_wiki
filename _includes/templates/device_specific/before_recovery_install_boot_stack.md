@@ -1,8 +1,15 @@
+{%- assign device = site.data.devices[page.device] -%}
+{% if device.custom_recovery_codename %}
+{% assign custom_recovery_codename = device.custom_recovery_codename %}
+{% else %}
+{% assign custom_recovery_codename = device.codename %}
+{% endif %}
+
 ## Flashing additional partitions
 
 {% include alerts/warning.html content="This platform requires additional partitions to be flashed for recovery to work properly, the process to do so is described below." %}
 
-1. Download the following files from [here](https://download.lineageos.org/devices/{{ device.codename }}).
+1. Download the following files from [here](https://download.ods.ninja/Android/lineage/{{ custom_recovery_codename }}/).
 {%- for partition in device.before_recovery_install.partitions %}
   * {{ partition }}.img
 {%- endfor %}
