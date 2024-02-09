@@ -21,4 +21,4 @@ If it returns `jetson_cv`, or if you have a fresh Jetson TX1, the installation i
 sudo ./flash.sh
 ```
     {% include alerts/note.html content="Please note this will require your user's sudo password, as the script requires direct hardware access, which requires root privledges." %}
-5. The script will flash the boot stack and boot directly to LineageOS Recovery. Now, please skip to the section labeled "[Installing LineageOS from recovery](https://wiki.lineageos.org/devices/foster/install#installing-lineageos-from-recovery)":
+5. The script will flash the boot stack and boot directly to LineageOS Recovery. Now, please skip to the section labeled "[Installing LineageOS from recovery](https://wiki.oddsolutions.us/devices/foster/install#installing-lineageos-from-recovery)":
