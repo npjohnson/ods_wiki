@@ -122,7 +122,3 @@ installer package.
 
 You've done it! Welcome to the elite club of self-builders. You've built your operating system from scratch, from the ground up. You are the master/mistress of your domain... and
 hopefully you've learned a bit on the way and had some fun too.
-
-## To get assistance
-
-* [#LineageOS-dev](https://web.libera.chat/gamja/?channel=#lineageos-dev) - A helpful, real-time chat room (or "channel"), on the Libera.Chat [IRC](https://en.wikipedia.org/wiki/Internet_Relay_Chat) network.
