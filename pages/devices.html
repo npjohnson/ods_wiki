@@ -214,7 +214,11 @@ function showFilters() {
 
 {%- for device in sorted %}
 
+{%- if device.variant %}
+{%- assign url = "devices/" | append: device.codename | append: "/variant" | append: device.variant | append: "/" | relative_url %}
+{%- else %}
 {%- assign url = "devices/" | append: device.codename | append: "/" | relative_url %}
+{%- endif %}
 {%- assign match = site.pages | where: "url", url %}
 
 {%- if device.vendor != lastVendor %}
