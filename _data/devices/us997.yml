@@ -19,9 +19,11 @@ image: g6.png
 install_method: fastboot_lg
 is_unlockable: false
 kernel: {repo: android_kernel_lge_msm8996, version: '4.4'}
-maintainers: []
+maintainers: [aleasto, AShiningRay, npjohnson, ROMSG, x86cpu]
 name: G6 (US Unlocked)
 network: [2G GSM, 3G UMTS, 3G CDMA2000, 4G LTE]
+note_content: This device is technically unsupported, as the 2nd Quarterly release of Android 14 tore out support for many things this device depends on. As such, this device gets monthly builds with device-specific fixes still, but they are built based on the February, 2024 security patch level.
+note_title: Device Support
 peripherals: [3.5mm jack, Accelerometer, Barometer, Color spectrum sensor, Compass, Fingerprint reader, Gyroscope, Proximity sensor]
 quirks: [fde, ims]
 ram: 4 GB
