@@ -20,8 +20,10 @@ image: g5.png
 install_method: fastboot_lg
 is_unlockable: false
 kernel: {repo: android_kernel_lge_msm8996, version: '4.4'}
-maintainers: []
+maintainers: [aleasto, AShiningRay, npjohnson, ROMSG, x86cpu]
 name: G5 (US Unlocked)
+note_title: Device Support
+note_content: This device is technically unsupported, as the 2nd Quarterly release of Android 14 tore out support for many things this device depends on. As such, this device gets monthly builds with device-specific fixes still, but they are built based on the February, 2024 security patch level.
 network: [2G GSM, 3G UMTS, 3G CDMA2000, 4G LTE]
 peripherals: [Fingerprint reader, Accelerometer, Gyroscope, Proximity sensor, Compass, Barometer, Color spectrum sensor, Light sensor, GPS, IR blaster, Mobility DisplayPort (MyDP), NFC, USB OTG]
 quirks: [fde, ims]
