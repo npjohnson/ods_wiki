@@ -10,7 +10,7 @@ All official builds from LineageOS are signed with our private keys. You can ver
 
 ## Using the OTA Verifier page
 
-Head to the [OTA Verifier](https://download.lineageos.org/verify) and follow instructions on screen.
+Head to the [OTA Verifier](https://updater.oddsolutions.us/verify) and follow instructions on screen.
 
 ## Using the update_verifier Python script
 
@@ -32,4 +32,4 @@ python3 update_verifier.py lineageos_pubkey /path/to/zip
 
 If the script reports `verified successfully`, the ZIP file signature is valid.
 
-To verify the contents of this page, you can look on [our GitHub](https://github.com/lineageos/lineage_wiki/blob/main/pages/verifying_builds.md).
+To verify the contents of this page, you can look on [our GitHub](https://github.com/npjohnson/ods_wiki/blob/master/pages/verifying_builds.md).

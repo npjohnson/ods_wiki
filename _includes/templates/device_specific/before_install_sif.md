@@ -43,4 +43,4 @@ If you don't see your device at this point, try reseating the port or verifying 
 
 If you see the device serial number followed by "device", you have successfully installed the header and may proceed with the installation instructions.
 
-{% include alerts/note.html content="If you would like to look at the full album of installation photos, you can view them [here](https://github.com/LineageOS/lineage_wiki/tree/main/images/device_specific/sif/)." %}
+{% include alerts/note.html content="If you would like to look at the full album of installation photos, you can view them [here](https://github.com/npjohnson/ods_wiki/tree/main/images/device_specific/sif/)." %}
