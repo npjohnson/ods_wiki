@@ -16,10 +16,6 @@ The LineageOS wiki provides instructions based on the assumption that your devic
 under the [LineageOS GitHub organization](https://github.com/LineageOS), and that it supports building LineageOS {{ definitions.valid_branches.enum[-2] }} or higher. If your device meets
 both those requirements, follow the instructions below to get your device set up.
 
-## Setting up the wiki locally
-
-See [contributing using repo]({{ "contributing_wiki.html#using-repo" | relative_url }}) for detailed instructions on setting up the wiki locally.
-
 ## Adding your device
 
 ### Prepare the required files
