@@ -24,16 +24,3 @@ Want to contribute but just want to work on a specific app? See [this guide]({{ 
 ## Translations
 
 Want to see LineageOS in your favorite language? Or it's already there but incomplete? Then [this guide]({{ "how-to/translate" | relative_url }}) is for you!
-
-## Wiki
-
-You can help us make this wiki a place where all information to work with and on LineageOS can easily be found. Click [here]({{ "contributing_wiki.html" | relative_url }}) to find out how!
-
-## Maintaining a device
-To bring up and maintain an official device, check out the following links:
-- [Working with proprietary blobs]({{ "proprietary_blobs.html" | relative_url }})
-- [How to add a new device to the wiki]({{ "addingdevice-howto.html" | relative_url }})
-- [How to submit a device for review]({{ "submitting_device.html" | relative_url }})
-
-## Infrastructure tips
-- [How to bypass Gerrit]({{ "bypassing_gerrit.html" | relative_url }})
