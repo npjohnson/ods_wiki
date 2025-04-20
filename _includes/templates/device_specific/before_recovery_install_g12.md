@@ -42,7 +42,7 @@ This generation of Amlogic device includes a unique boot mode called "Burn Mode"
 
  {% include alerts/warning.html content="This platform requires the dtb and dtbo partitions to be flashed for recovery to work properly, the process to do so is described below." %}
 
- 1. Download dtb.img and dtbo.img file from [here](https://download.lineageos.org/devices/{{ device.codename }}).
+ 1. Download dtb.img and dtbo.img file from [here](https://updater.oddsolutions.us/devices/{{ device.codename }}).
  2. Reboot the device into bootloader mode:
      * {{ device.download_boot }}
  3. Flash the downloaded image files to your device by running:

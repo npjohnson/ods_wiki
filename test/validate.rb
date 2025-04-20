@@ -182,11 +182,6 @@ if Parallel.map(Dir.entries(device_dir).sort) do |filename|
       ret = false
     end
 
-    if !device_json["maintainers"].empty? and device_json["uses_twrp"]
-      puts to_relative_path(device_path) + ': uses_twrp cannot be used for a supported device'
-      ret = false
-    end
-
     if !validate_peripherals(schema_valid_peripherals, device_json["peripherals"])
       puts to_relative_path(device_path) + ': peripherals are not sorted, use sort_peripherals.py'
       ret = false
