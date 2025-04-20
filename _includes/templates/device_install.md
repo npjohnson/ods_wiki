@@ -105,7 +105,7 @@ There are no recovery installation instructions for this discontinued device.
 {%- endif -%}
 
 {%- if device.maintainers != empty %}
-1. Download the [LineageOS zip file](https://download.lineageos.org/devices/{{ device.codename }}) that you would like to install or [build]({{ device | device_link: "build" | relative_url }}) the package yourself.
+1. Download the [LineageOS zip file](https://updater.oddsolutions.us/devices/{{ device.codename }}) that you would like to install or [build]({{ device | device_link: "build" | relative_url }}) the package yourself.
    {% include alerts/note.html content="This page may contain additional files that are not mentioned in this guide. Please ignore these as they are unnecessary to the installation process." %}
 {%- else %}
 1. [Build]({{ device | device_link: "build" | relative_url }}) a LineageOS installation package.
@@ -161,13 +161,7 @@ There are no recovery installation instructions for this discontinued device.
 
 ## Installing Add-Ons
 
-{% include alerts/note.html content="If you don't want to install any add-on (such as Google Apps), you can skip this whole section!" %}
-
-{%- capture gapps_note %}
-If you want to install Google Apps add-on package (use the `{{ userspace_architecture }}` architecture), you can download it from [here]({{ "gapps" | relative_url }}).
-This add-on needs to be installed **before** booting into LineageOS for the first time!
-{%- endcapture %}
-{% include alerts/warning.html content=gapps_note %}
+{% include alerts/note.html content="If you don't want to install any add-on, you can skip this whole section!" %}
 
 {%- if device.is_ab_device and device.uses_twrp %}
 1. Even though you are already in recovery, run:
@@ -238,9 +232,3 @@ If you are wondering about the next steps, continue, otherwise, enjoy your new L
 
 <button class="btn btn-primary" style="display: none" onClick="previousPage()" id="previous-page">Previous step</button>
 <button class="btn btn-primary" style="display: none" onClick="nextPage()" id="next-page">Next step</button>
-
-## Get assistance
-
-After you've double checked that you followed the steps precisely, didn't skip any and still have questions or got stuck, feel free to ask on [our subreddit](https://reddit.com/r/LineageOS), on [our Discord server](https://discord.gg/gD6DMtf), or in
-[#LineageOS on Libera.Chat](https://web.libera.chat/gamja/?channel=#lineageos).
-
