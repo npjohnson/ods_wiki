@@ -30,7 +30,7 @@
     - question: "Where can I find the last build for xxx device before support was dropped or its LineageOS version was deprecated?"
       response: |
         - In short, you can't. We don't build more than 2 versions usually (exemptions were made when [major hurdles](https://lineageos.org/Changelog-27/#deprecations) prevented a large amount of devices to receive a newer version) and we don't keep old builds around for a multitude of reasons, the largest being that we won't keep old, insecure, potentially broken builds around. Additionally, we don't have the server space (or the space on mirrors) to do so.
-        - There might be archives in the wild and you can check if they are actually signed by LineageOS [here](https://download.lineageos.org/verify). Please don't expect us to provide any support for them, though, beyond what we offer on this wiki!
+        - There might be archives in the wild and you can check if they are actually signed by LineageOS [here](https://updater.oddsolutions.us/verify). Please don't expect us to provide any support for them, though, beyond what we offer on this wiki!
     - question: "A build for my device wasn’t posted on the usual day, or disappeared — where is it?"
       response: |
          - Official support does not guarantee that a build will be produced for every week. Builds may be skipped or temporarily removed due to infrastructure issues, build failures, or device-specific problems detected during the build process.

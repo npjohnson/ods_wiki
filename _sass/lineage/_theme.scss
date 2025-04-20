@@ -4,9 +4,12 @@
   color-scheme: light;
 
   --color-dark: #121212;
-  --color-brand-light: #cce8e9;
-  --color-brand-dark: #324b4c;
-  --color-brand-primary: #167c80;
+  --color-brand-light: #b8e0de;
+  --color-brand-dark: #2d5a58;
+  --color-brand-primary: #2d7a78;
+  --color-brand-primary-bright: #5ebcb8;
+  --color-brand-identity: #343434;
+  --color-brand-identity-dark: #242424;
 
   --theme-primary: var(--color-brand-primary);
   --theme-primary-strong: var(--color-brand-dark);
@@ -26,7 +29,8 @@
   --theme-border: #dee2e6;
   --theme-border-soft: #e8e8e8;
 
-  --theme-link: var(--color-brand-primary);
+  --theme-link: var(--color-brand-primary-bright);
+
   --theme-link-hover: var(--color-brand-dark);
 
   --theme-form-check-border: #8fa2a6;
