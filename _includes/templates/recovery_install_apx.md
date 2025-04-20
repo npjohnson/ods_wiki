@@ -8,7 +8,7 @@ Tegraflash is only available for Linux. It will also not run properly in a VM.
 
 ## Installing a custom recovery using `Tegraflash`
 
-1. Download a [flash package](https://download.lineageos.org/devices/{{ device.codename }}) for your device.
+1. Download a [flash package](https://updater.oddsolutions.us/devices/{{ device.codename }}) for your device.
 {% if device.flash_download_instructions %}
     * {{ device.flash_download_instructions }}
 {% else %}
@@ -32,4 +32,4 @@ Tegraflash is only available for Linux. It will also not run properly in a VM.
 sudo ./flash.sh
 ```
     {% include alerts/note.html content="Please note this will require your user's sudo password, as the script requires direct hardware access, which requires root privledges." %}
-5. The script will flash the boot stack and boot directly to LineageOS Recovery. Now, please skip to the section labeled "[Installing LineageOS from recovery](https://wiki.lineageos.org/devices/{{ device.codename }}/install#installing-lineageos-from-recovery)":
+5. The script will flash the boot stack and boot directly to LineageOS Recovery. Now, please skip to the section labeled "[Installing LineageOS from recovery](https://wiki.oddsolutions.us/devices/{{ device.codename }}/install#installing-lineageos-from-recovery)":

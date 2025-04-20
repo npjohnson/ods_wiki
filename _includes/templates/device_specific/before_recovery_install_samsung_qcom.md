@@ -7,7 +7,7 @@
 2. Enable Developer Options by pressing the "Build Number" option at least 7 times, in the "Settings" app within the "About" menu
     * From within the Developer options menu, enable OEM unlock.
 {% endunless %}
-3. Download `vbmeta.img` from [here](https://download.lineageos.org/devices/{{ device.codename }}).
+3. Download `vbmeta.img` from [here](https://updater.oddsolutions.us/devices/{{ device.codename }}).
 4. Power off the device, and boot it into download mode:
     * {{ device.download_boot }}
     * Now, click the button that the onscreen instructions correlate to "Device unlock mode" and/or "Unlock Bootloader".
