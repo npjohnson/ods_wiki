@@ -38,7 +38,7 @@ The preferred method of installing a custom recovery is through Download Mode{% 
     {% include alerts/tip.html content="Ensure you download the `.tar` or the `.tar.md5` file and not the `.img` version." %}
 {%- elsif device.maintainers != empty %}
 {%- assign is_lineage_recovery = true %}
-2. Download [Lineage Recovery](https://download.lineageos.org/devices/{{ custom_recovery_codename }}). Simply download the latest recovery file, named `{{ device.recovery_partition_name }}.img`
+2. Download [Lineage Recovery](https://updater.oddsolutions.us/devices/{{ custom_recovery_codename }}). Simply download the latest recovery file, named `{{ device.recovery_partition_name }}.img`
 3. Open a Command Prompt in the folder where the file was downloaded, and TAR the file by running `tar --format=ustar -cvf {{ device.recovery_partition_name }}.tar {{ device.recovery_partition_name }}.img`
     {% capture content -%}
     Make sure to not accidentally name the file `{{ device.recovery_partition_name }}.img.img` when file name extensions are hidden.

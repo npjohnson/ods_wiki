@@ -48,7 +48,7 @@ This device does not have more than one version so far, therefore we can't provi
 {%- elsif device.uses_twrp %}
 1. Verify your device is using the latest [TWRP](https://dl.twrp.me/{{ custom_recovery_codename }}). Simply download the latest recovery file, named something like `twrp-x.x.x-x-{{ custom_recovery_codename }}.img`.
 {%- else %}
-1. Verify your device is using the latest [Lineage Recovery](https://download.lineageos.org/devices/{{ custom_recovery_codename }}). Simply download the latest recovery file, named `{{ device.recovery_partition_name }}.img`.
+1. Verify your device is using the latest [Lineage Recovery](https://updater.oddsolutions.us/devices/{{ custom_recovery_codename }}). Simply download the latest recovery file, named `{{ device.recovery_partition_name }}.img`.
 {%- endif %}
 Follow your [device's installation guide]({{ device | device_link: "install" | relative_url }}) to see how you can update your recovery image.
     {% include alerts/important.html content="These instructions may not work if you choose to use a different recovery!" %}
@@ -68,14 +68,10 @@ The updater app does not support upgrades from one version of LineageOS to anoth
 
 {{ recovery_update }}
 {%- if device.maintainers != empty %}
-1. Download the [LineageOS zip file](https://download.lineageos.org/devices/{{ device.codename }}) that you would like to install or [build]({{ device | device_link: "build" | relative_url }}) the package yourself.
+1. Download the [LineageOS zip file](https://updater.oddsolutions.us/devices/{{ device.codename }}) that you would like to install or [build]({{ device | device_link: "build" | relative_url }}) the package yourself.
 {%- else %}
 1. [Build]({{ device | device_link: "build" | relative_url }}) a LineageOS install package.
 {%- endif %}
-2. If you are currently using (or now want to use) an application package add-on such as [Google Apps]({{ "gapps" | relative_url }}), you have the following options:
-    - keep using them: Download the appropriate version [now]({{ "gapps" | relative_url }}) (use the `{{ userspace_architecture }}` architecture)
-    - remove them: You can only do so by performing a [factory reset]({{ "glossary/#factory-reset" | absolute_url }}){: .glossary}, which will also remove all your data.
-    - start using them: You can only do so by performing a factory reset, which will also remove all your data. Download the appropriate version [now]({{ "gapps" | relative_url }}) (use the `{{ userspace_architecture }}` architecture)
 3. Make sure your computer has working `adb`. Setup instructions can be found [here]({{ "adb_fastboot_guide.html" | relative_url }}).
 4. Enable [USB debugging]({{ "adb_fastboot_guide.html#setting-up-adb" | relative_url }}) on your device.
 {%- if adbRoot %}
@@ -162,7 +158,6 @@ Follow your [device's installation guide]({{ device | device_link: "/install" | 
     adb -d sideload /path/to/zip
     ```
 {%- endif %}
-    {% include alerts/note.html content="If you previously had any Google Apps add-on package installed on your device, you must install an updated package **before** the first boot of Android! If you did not have Google Apps installed, you must wipe the **Data** partition (or perform a factory reset) to install them." %}
 {% if device.is_ab_device or device.uses_twrp != true %}
     {% include alerts/specific/note_signature_check.html %}
 {%- endif %}
@@ -173,16 +168,10 @@ Follow your [device's installation guide]({{ device | device_link: "/install" | 
     adb -d reboot
     ```
 {% else %}
-7. Once you have installed everything successfully, click the back arrow in the top left of the screen, then "Reboot system now".
+8. Once you have installed everything successfully, click the back arrow in the top left of the screen, then "Reboot system now".
 {% endif %}
 
 {%- if device.custom_recovery_link or device.uses_twrp %}
 {% include alerts/specific/warning_recovery_app.html %}
 {%- endif %}
-
-## Get assistance
-
-After you've double checked that you followed the steps precisely, didn't skip any and still have questions or got stuck, feel free to ask on [our subreddit](https://reddit.com/r/LineageOS), on [our Discord server](https://discord.gg/gD6DMtf), or in
-[#LineageOS on Libera.Chat](https://web.libera.chat/gamja/?channel=#lineageos).
-
 {% endif %}

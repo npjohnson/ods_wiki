@@ -8,7 +8,7 @@ Tegraflash is only available for Linux. It will also not run properly in a VM.
 
 ## Installing a custom recovery using `Tegraflash`
 
-1. Download a [flash package](https://download.lineageos.org/devices/{{ device.codename }}) for your device.
+1. Download a [flash package](https://updater.oddsolutions.us/devices/{{ device.codename }}) for your device.
 {% if device.flash_download_instructions %}
     * {{ device.flash_download_instructions }}
 {% else %}
