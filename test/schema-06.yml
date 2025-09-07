@@ -998,6 +998,7 @@ properties:
       - Dynalink
       - Essential
       - Fairphone
+      - Freebox
       - F(x)tec
       - Google
       - HardKernel
@@ -1047,6 +1048,7 @@ properties:
       - bq
       - essential
       - fairphone
+      - freebox
       - fxtec
       - google
       - hardkernel
