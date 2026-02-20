@@ -130,6 +130,10 @@ include:
   - pages/info/nx_tab_variant3.md
   - pages/info/nx_tab_variant4.md
   - pages/info/ocean.md
+  - pages/info/odin2.md
+  - pages/info/odin2mini.md
+  - pages/info/odin2portal.md
+  - pages/info/odin2thor.md
   - pages/info/odroidc4.md
   - pages/info/odroidc4_tab.md
   - pages/info/payton.md
