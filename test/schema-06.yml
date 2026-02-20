@@ -254,6 +254,7 @@ definitions:
       - LTPO AMOLED
       - LTPO OLED
       - LTPO P-OLED
+      - MINI LED
       - Optic AMOLED
       - Super AMOLED
       - Pentile RGBG AMOLED
