@@ -1,6 +1,5 @@
 architecture: arm64
 battery: {capacity: 7040, removable: false, tech: 'Li-Po'}
-before_recovery_install: samsung_exynos9xxx
 bluetooth: {profiles: [A2DP + aptX], spec: '5.3'}
 cameras:
   - {flash: None, info: '8 MP'}
@@ -15,6 +14,7 @@ download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>V
 gpu: ARM Mali-G68 MP4
 image: gta4xl.png
 install_method: heimdall
+is_unlockable: false
 kernel: {repo: android_kernel_samsung_gta4xls, version: '5.10'}
 maintainers: [Linux4]
 models: [SM-P620]
