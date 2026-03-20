@@ -17,7 +17,7 @@ tags:
 
 ## Reporting a bug
 
-We use Gitlab Issues as our bug tracker. Before you submit a bug, please search to verify that someone else hasn't reported it already.
+Before you submit a bug, please search to verify that someone else hasn't reported it already.
 
 Please do not:
 - Post "Me too" or "+1" messages on existing reports
@@ -63,4 +63,4 @@ These are bugs in our online services, e.g.
 
   {% include alerts/important.html content="If the issue affects your device, this is the **wrong** place to report your issue!" %}
 
-<a href="https://gitlab.com/LineageOS/issues/infra/-/issues"><button class="btn btn-primary">Go to infrastructure bugs</button></a>
+<a href="https://github.com/LineageOS/issues-infra/issues"><button class="btn btn-primary">Go to infrastructure bugs</button></a>
