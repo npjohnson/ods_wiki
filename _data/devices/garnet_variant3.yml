@@ -33,7 +33,7 @@ recovery_boot: With the device powered off, hold <kbd>Volume Up</kbd> + <kbd>Pow
 recovery_partition_name: recovery
 recovery_reboot: fastboot_reboot
 release: 2023-09
-screen: {refresh_rate: 120, resolution: '1080x2400', size: 6.67, technology: 'Super AMOLED'}
+screen: {refresh_rate: 120, resolution: '1220x2712', size: 6.67, technology: 'Super AMOLED'}
 soc: Qualcomm SM7435-AB Snapdragon 7s Gen 2
 storage: 128/256/512 GB
 tree: android_device_xiaomi_garnet
