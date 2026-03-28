@@ -9,7 +9,6 @@ cpu: Krait
 cpu_cores: '2'
 cpu_freq: 1.7 GHz
 current_branch: 14.1
-custom_recovery_link: http://www.mediafire.com/file/4m9u74p8akndor8/recovery.img
 dimensions: {depth: 8.9, height: 124.6, width: 61.3}
 download_boot: With the device powered off, hold <kbd>Volume Down</kbd> + <kbd>Home</kbd> + <kbd>Power</kbd>.
 gpu: Qualcomm Adreno 305
