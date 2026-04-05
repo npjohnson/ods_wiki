@@ -26,13 +26,13 @@ models: [CPH2661, CPH2663]
 name: 'Nord 4'
 network: [2G GSM, 3G UMTS, 4G LTE, 5G NR]
 peripherals: [A-GPS, Accelerometer, Compass, Dual SIM, Dual-frequency GNSS, Fingerprint reader, BeiDou, Galileo, GLONASS, GPS, SBAS, QZSS, Gyroscope, Hall effect sensor, IR blaster, Light sensor, NFC, Proximity sensor, Stereo speakers, USB OTG]
-ram: 8/12 GB LPDDR5X
+ram: 8/12/16 GB LPDDR5X
 recovery_partition_name: recovery
 recovery_reboot: fastboot_menu
 release: 2024-07
 screen: {refresh_rate: 120, resolution: '1240x2772', size: 6.74, technology: 'AMOLED'}
 soc: Qualcomm SM7675-AB Snapdragon 7+ Gen 3
-storage: 128 GB UFS3.1 / 256 GB UFS4.0
+storage: 128 GB UFS3.1 / 256/512 GB UFS4.0
 tree: android_device_oneplus_avalon
 type: phone
 vendor: OnePlus
