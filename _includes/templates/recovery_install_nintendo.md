@@ -31,7 +31,7 @@ Additionally, this guide will not detail exploiting or ModChipping your Switch, 
 4. Now, make your partition scheme selections based on your needs, as well as any other operating systems you may plan to install alongside Android.
     {% include alerts/note.html content="Please give Android no less than roughly 10 GB to ensure that enough space is present." %}
 5. When content with your selections, click "Next Step" in the bottom-right of the screen, then when ready click "Start", and the safety pause period is complete, press the Power Button to proceed.
-    {% include alerts/warning.html content="Please ensure that you select 'Dynamic: Android 13+' when prompted." %}
+    {% include alerts/warning.html content="Please ensure that you select 'Dynamic: Android 13+' if you are prompted, though modern versions of Hekate select this option by default." %}
     {% include alerts/warning.html content="If you were on ANY prior Switchroot/Unofficial release of ANY version, you MUST repartition your SD Card, there is no upgrade path." %}
 6. When this process completes, you will be presented with several options, select "SD UMS" when prompted.
 
@@ -63,8 +63,8 @@ r2p_action=self
 ; ddr200_enable=1 uncomment for faster SD speed on models that support it (Samsung enabled by default)
 ; emmc=1 uncomment to boot from the internal eMMC (not reccomended, and requires a signifigantly different set of installation instructions/partitioning process)
 ```
-5. Safely eject the SD Card from your PC's file browser, then click "Close" on the device, then the "X" icon in the top right of the screen, and finally the "Home" button in the top-left of the screen.
-6. Now select "Flash Android", go through the process, then when asked if you'd like to reboot into recovery, click "No".
+5. Safely eject the SD Card from your PC's file browser, then click "Close" on the device.
+6. Now select "Flash Android 13+", go through the process, then when asked if you'd like to reboot into recovery, click "No".
 7. When the process is complete, navigate to the Hekate's main menu by clicking "X Close" in the top right of the screen.
 8. In Hekate, select "Nyx Settings" in the bottom-left of the screen, then "Dump Joy-Con BT" from the top-right.
 9. Click "OK" once a message indicates success, the message will look like this:
